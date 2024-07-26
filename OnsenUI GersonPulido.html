@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Onsen UI Carousel Example</title>
+    <link href="https://cdn.jsdelivr.net/npm/onsenui/css/onsenui.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/onsenui/css/onsen-css-components.min.css" rel="stylesheet">
+  </head>
+  <body>
+    <ons-page>
+      <ons-toolbar>
+        <div class="center">Carousel</div>
+      </ons-toolbar>
+      <ons-carousel fullscreen swipeable auto-scroll overscrollable id="carousel">
+        <ons-carousel-item>
+          <img src="https://w.wallha.com/ws/15/O7EFyWRM.png" class="d-block w-100" alt="1.png">
+        </ons-carousel-item>
+        <ons-carousel-item>
+          <img src="https://w.wallha.com/ws/15/lhprcawJ.png" class="d-block w-100" alt="2.png">
+        </ons-carousel-item>
+        <ons-carousel-item>
+          <img src="https://w.wallha.com/ws/15/TBUlcLnf.png" class="d-block w-100" alt="3.png">
+        </ons-carousel-item>
+      </ons-carousel>
+      <ons-bottom-toolbar>
+        <div class="center">
+          <ons-button modifier="quiet" onclick="carousel.prev()">Prev</ons-button>
+          <ons-button modifier="quiet" onclick="carousel.next()">Next</ons-button>
+        </div>
+      </ons-bottom-toolbar>
+    </ons-page>
+
+    <script src="https://cdn.jsdelivr.net/npm/onsenui/js/onsenui.min.js"></script>
+    <script>
+      document.addEventListener('init', function(event) {
+        var page = event.target;
+
+        if (page.id === 'carousel') {
+          window.carousel = document.getElementById('carousel');
+        }
+      });
+    </script>
+  </body>
+</html><!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Onsen UI Carousel Example</title>
+    <link href="https://cdn.jsdelivr.net/npm/onsenui/css/onsenui.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/onsenui/css/onsen-css-components.min.css" rel="stylesheet">
+  </head>
+  <body>
+    <ons-page>
+      <ons-toolbar>
+        <div class="center">Carousel</div>
+      </ons-toolbar>
+      <ons-carousel fullscreen swipeable auto-scroll overscrollable id="carousel">
+        <ons-carousel-item>
+          <img src="https://w.wallha.com/ws/15/O7EFyWRM.png" class="d-block w-100" alt="1.png">
+        </ons-carousel-item>
+        <ons-carousel-item>
+          <img src="https://w.wallha.com/ws/15/lhprcawJ.png" class="d-block w-100" alt="2.png">
+        </ons-carousel-item>
+        <ons-carousel-item>
+          <img src="https://w.wallha.com/ws/15/TBUlcLnf.png" class="d-block w-100" alt="3.png">
+        </ons-carousel-item>
+      </ons-carousel>
+      <ons-bottom-toolbar>
+        <div class="center">
+          <ons-button modifier="quiet" onclick="carousel.prev()">Prev</ons-button>
+          <ons-button modifier="quiet" onclick="carousel.next()">Next</ons-button>
+        </div>
+      </ons-bottom-toolbar>
+    </ons-page>
+
+    <script src="https://cdn.jsdelivr.net/npm/onsenui/js/onsenui.min.js"></script>
+    <script>
+      document.addEventListener('init', function(event) {
+        var page = event.target;
+
+        if (page.id === 'carousel') {
+          window.carousel = document.getElementById('carousel');
+        }
+      });
+    </script>
+  </body>
+</html>
